@@ -1,0 +1,9 @@
+name: Validate PR
+on:
+  pull_request:
+jobs:
+  static_checks:
+    name: validate-changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
